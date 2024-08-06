@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+     table{
+        width: 90vw;
+        height:150vh;
+        background-color:rgb(238, 209, 238);
+        margin-left:5vw;
+     }
+     tr{
+       width: 100%;
+       background-color:lightcoral;
+       border-style: none;
+     }
+     .row-one{
+        height:80px;
+     }
+     .row-two{
+        height:20vh;
+     }
+     .row-three{
+        height:20vh;
+     }
+     .row-four{
+        height: 40vh;
+     }
+     .row-one-column{
+        width:20%;
+        height: 100%;
+        background-color: rgb(207, 239, 207);
+        border-style:solid;
+        border-width: 2px;
+     }
+     .row-two-column{
+        width: 25%;
+        height: 12%;
+        background-color:rgb(255, 255, 255);
+        border-style:solid;
+        border-width:2px;
+     }
+     .row-three-column{
+        width: 25%;
+        height: 40vh;
+        border-style:solid;
+        border-width: 2px;
+        background-color:aquamarine;
+     }
+     .row-one-column-image{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        }
+    .row-one-column-one-image{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:center;
+        gap:40px;
+    }
+    .row-two-column-one-image{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+    }
+    .row-three-column-one-image{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items: center;
+        gap: 5px;
+        margin: 0%;
+    }
+    h1{
+        font-size:40px;
+        font-style: italic;
+        margin-left:19px;
+        font-weight:50%;
+    }
+    h1{
+        font-size:25px;
+        margin-left:20px;
+        font-style: italic;
+    }
+    b{
+        font-size:30px;
+        margin-left:19px;
+        font-style: italic;
+    }
+    .row-four-column-one-image{
+        display: flex;
+        flex-direction: row;
+    }
+    </style>
+</head>
+<body style="margin: 0;">
+    <table>
+        <tr class="row-one">
+            <td class="row-one-column">
+                <div class="row-one-column-image">
+                    <img src="../assets/image/rj7.webp" height="230px" width="100%">
+                </div>
+            </td>
+            <td class="row-one-column">
+                <div class="row-one-column-one-image">
+                    <img src="../assets/image/trv4.jpg" height="100%" width="100%">
+                </div>
+            </td>
+            <td class="row-one-column">
+                <div class="row-one-column-two-image">
+                   <img src="../assets/image/rj16.webp" height="230px" width="100%">
+                </div>
+            </td>
+            <td class="row-one-column">
+                <div>
+                    <img src="../assets/image/rj8.webp" height="230px" width="100%">
+                </div>
+            </td>
+        </tr>
+        <tr class="row-two">
+          <td class="row-two-column" rowspan="2" colspan="2">
+            <div class="row-two-column-one-image">
+                <img src="../assets/image/rj.jpg" height="500px" width="650px">
+            </div>
+          </td>
+          <td class="row-two-column" colspan="2">
+          <b>Rajasthan</b>
+          <h1>
+           "The royalty of Rajasthan" is an kind of dependent on their 
+          <br />
+           culture and tradition. the most popular and beautiful culture is 
+           <br /> 
+           found on over world is rajasthan. that proudly we can say that 
+           <br />
+           is from our india.
+          </h1>
+          </td>
+        </tr>
+        <tr class="row-three">
+          <td class="row-two-column" colspan="2">
+            <div class="row-three-column-one-image">
+                <img src="../assets/image/rj24.jpg" height="250px" width="210px">
+                <img src="../assets/image/rj19.png" height="250px" width="210px">
+                <img src="../assets/image/rj25.jpg" height="250px" width="210px">  
+            </div>
+          </td>
+        </tr>
+        <tr class="row-four">
+            <td class="row-three-column" colspan="4">
+                <div class="row-four-column-one-image">
+                  <img src="../assets/image/rj3.jpg" height="300px" width="250px">
+                  <img src="../assets/image/rj13.jpg" height="300px" width="250px">
+                  <img src="../assets/image/rj16.webp" height="300px" width="250px">
+                </div>
+            </td>
+        </tr>
+        <tr class="row-four">
+           <td class="row-three-column" colspan="4"></td>
+        </tr>
+    </table>
+</body>
+</html>
