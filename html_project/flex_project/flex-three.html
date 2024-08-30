@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <!-- internal styling -->
+    <style>
+        /* main container */
+        .main-container{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items:center;
+            background-color: lightgray;
+            border: solid;
+        }
+        /* first box */
+        .first{
+            border: solid;
+            background-color:lightpink;
+            height:10%;
+            width:90%;
+        }
+        /* second box */
+        .second{
+            height: 70%;
+            width: 90%;
+            background-color: lightblue;
+            border: solid;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        /* second first */
+        .second-first{
+            height: 80%;
+            width: 40%;
+            background-color:lightpink;
+            border: solid;
+        }
+        .second-second{
+            height: 80%;
+            width: 40%;
+            border: solid;
+            background-color:lightpink;
+            display: flex;
+            flex-direction:row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        /* left-one styling */
+        .left-one{
+            height: 100%;
+            width: 50%;
+            background-color:lightcyan;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+            align-items: center;
+            gap: 40px;
+        }
+        /* right-one styling */
+        .right-one{
+            height: 100%;
+            width: 50%;
+            background-color:lightcyan;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+            align-items: center;
+            gap: 40px;
+        }
+        /* second */
+        .left-second-one{
+            height: 20%;
+            width: 50%;
+            border: solid;
+            background-color: lightpink;
+        }
+        .right-second-two{
+            height: 20%;
+            width: 50%;
+            border: solid;
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <!-- main container -->
+    <div class="main-container">
+        <!-- firast box -->
+        <div class="first"></div>
+        <!-- second box -->
+        <div class="second">
+            <!-- second-first container -->
+            <div class="second-first"></div>
+            <!-- second-second container -->
+            <div class="second-second">
+                <!-- second second one -->
+              <div class="left-one">
+                <!-- first -->
+                <div class="left-second-one"></div>
+                <!-- second -->
+                <div class="left-second-one"></div>
+                <!-- third -->
+                <div class="left-second-one"></div>
+             </div>
+            <!--second second two  -->
+             <div class="right-one">
+                <!-- forth -->
+                <div class="right-second-two"></div>
+                <!-- fifth -->
+                <div class="right-second-two"></div>
+                <!-- sixth -->
+               <div class="right-second-two"></div>
+             </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

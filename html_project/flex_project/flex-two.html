@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>flex</title>
+    <style>
+        .main-container{
+            height:100vh;
+            width: 100vw;
+            background-color: lightblue;
+            display: flex;
+            flex-direction:row;
+        }
+        .column-one{
+            width: 20%;
+            height: 100%;
+            background-color:  lightgreen;
+        }
+        .column-two{
+            width: 40%;
+            height: 100%;
+            background-color:lightcoral;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .column-three{
+            width: 40%;
+            height: 100%;
+            background-color: lightseagreen;
+        }
+        .column-one-row-one{
+            width: 100%;
+            height: 50%;
+            background-color:lightpink ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .column-one-row-two{
+            width: 100%;
+            height: 50%;
+            background-color:lightcyan ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .column-two-row-one{
+            width: 100%;
+            height: 50%;
+            background-color:lightpink ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .column-two-row-two{
+            width: 100%;
+            height: 50%;
+            background-color:lightcyan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+       <div class="column-one">
+        <div class="column-one-row-one"> 
+            <img src="../assets/image/enjoy.jpeg" height="100px" width="100px">
+        </div>
+        <div class="column-one-row-two">
+            <img src="../assets/image/enjoy.jpeg" height="100px" width="100px">
+        </div>
+       </div>
+       <div class="column-two">
+        <img src="../assets/image/enjoy.jpeg" height="100px" width="100px">
+       </div>
+       <div class="column-three"> 
+        <div class="column-two-row-one">
+            <img src="../assets/image/enjoy.jpeg" height="100px" width="100px">
+        </div>
+        <div class="column-two-row-two">
+            <img src="../assets/image/enjoy.jpeg" height="100px" width="100px">
+        </div>
+       </div>
+    </div>
+</body>
+</html>
