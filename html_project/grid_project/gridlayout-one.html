@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <!-- main container styling -->
+    <style>
+       .main-container{
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+       }
+       .first-box{
+        border-style: solid;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+       }
+       .second-box{
+        border-style: solid;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 1fr 1fr;
+       }
+       .third-box{
+         border-style: solid;
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+       }
+    </style>
+</head>
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <!-- first row -->
+    <div class="first-row">
+      <div class="first-box"></div>
+      <div class="second-box"></div>
+    </div>
+      <!-- second row -->
+      <div class="second-row">
+       <div class="first-box"></div>
+       <div class="second-box"></div>
+      </div>
+      <!-- third row -->
+      <div class="third-row"></div>
+      <div class="third-box"></div>
+    </div>
+</body>
+</html>
