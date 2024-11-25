@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        /* Main container */
+        .main-container {
+            width: 21cm; 
+            height: 32.7cm;
+            margin: 20px auto;
+            border: 3px solid #000;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* First-row styling */
+        .first-row, .second-row, .third-row {
+            width: 100%;
+            display: flex;
+        }
+
+        .one {
+            width: 30%;
+            height: 10%;
+            background-color: #E3E1D9;
+        }
+
+        .two {
+            width: 70%;
+            height: 10%;
+            background-color: white;
+        }
+
+        .logo, .intro, .contact, .info {
+            height: 100%;
+        }
+
+        .logo {
+            width: 30%;
+            background-color: #C39898;
+        }
+
+        .intro {
+            width: 70%;
+            background-color: #C39898;
+        }
+
+        img {
+            margin-left: 25%;
+            margin-top: 10%;
+        }
+
+        h1 {
+            margin-left: 15%;
+            margin-top: 5%;
+        }
+
+        p {
+            margin-left: 15%;
+            font-size: 150%;
+        }
+
+        /* Contact styling */
+        .contact {
+            width: 30%;
+            background-color: #E3E1D9;
+            padding: 10px;
+        }
+
+        
+        .con-info {
+            text-align: left;
+            font-size: 90%;
+        }
+        .skill {
+            margin-right: 60px;
+        }
+
+        /* Info styling */
+        .info {
+            width: 70%;
+            background-color: #fff;
+            padding: 10px;
+        }
+        p {
+            font-size: 100%;
+            margin-right: 50%;
+        }
+        h2 {
+            margin-left: 20%;
+        }
+        h4 {
+            font-size: 100%;
+            margin-left: 50px;
+        }
+        h3 {
+            margin-left: 20px;
+        }
+
+        /* Range input styling */
+        input[type="range"] {
+            -webkit-appearance: none;
+            width: 100%; /* Full-width */
+            height: 10px; /* Height of the slider */
+            background:#fff; /* Track color */
+            border-radius: 5px; /* Track rounded corners */
+            outline: none; /* Remove outline */
+            margin: 10px 0; /* Space around the input */
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;  
+            appearance: none;
+            width: 20px; /* Thumb width */
+            height: 20px; /* Thumb height */
+            background:#E1ACAC; /* Thumb color */
+            border-radius: 50%; /* Round thumb */
+            cursor: pointer; /* Pointer on hover */
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            background:#E1ACAC; /* Thumb color */
+            border-radius: 50%; /* Round thumb */
+            cursor: pointer; /* Pointer on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main container -->
+    <div class="main-container">
+        <!-- First row -->
+        <div class="first-row">
+            <div class="one"></div>
+            <div class="two"></div>
+        </div>
+        <!-- Second row -->
+        <div class="second-row">
+            <div class="logo">
+                <img src="./assets/rs-photo.png" height="70%" width="35%">
+            </div>
+            <div class="intro">
+                <h1>DIVYA BONDRE</h1>
+                <p>Full Stack Developer</p>
+            </div>
+        </div>
+        <!-- Third row -->
+        <div class="third-row">
+            <div class="contact">
+                <h2>CONTACT</h2>
+                <div class="con-info">
+                    <img src="./assets/rs-call.png" height="9%" width="9%">
+                    <a>96******61</a>
+                    <br />
+                    <img src="./assets/rs-loc.png" height="9%" width="9%">
+                    <a>Katol, Maharashtra</a>
+                    <br />
+                    <img src="./assets/rs-email.png" height="9%" width="9%">
+                    <a href="https://mail.google.com/mail/u/0/#inbox">bondredivya12@gmail.com</a>
+                    <br />
+                    <img src="./assets/rs-github.png" height="9%" width="9%">
+                    <a href="https://github.com/DivyaFullStackDeveloper/Divya_html_Projects.git">DivyaFullStackDeveloper</a>
+                </div>
+                <br/>
+                <h2>SKILLS</h2>
+                <div class="skill">
+                    <ul>
+                        <li>HTML
+                            <input type="range" id="htmlRange" min="1" max="100" value="80">
+                        </li>
+                        <li>CSS
+                            <input type="range" id="cssRange" min="1" max="100" value="85">
+                        </li>
+                        <li>JavaScript
+                            <input type="range" id="jsRange" min="1" max="100" value="30">
+                        </li>
+                        <li>React-Native
+                            <input type="range" id="reactRange" min="1" max="100" value="0">
+                        </li>
+                        <li>Web Designing
+                            <input type="range" id="designRange" min="1" max="100" value="40">
+                        </li>
+                        <li>Native IOS Development
+                            <input type="range" id="iosRange" min="1" max="100" value="0">
+                        </li>
+                        <li>Mobile Development
+                            <input type="range" id="mobileRange" min="1" max="100" value="0">
+                        </li>
+                        <li>Android Development
+                            <input type="range" id="androidRange" min="1" max="100" value="0">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info">
+                <u>
+                    <h2>WORK EXPERIENCE</h2>
+                </u>
+                <u>
+                    <h3>Full Stack Developer</h3>
+                </u>
+                <h3>->HTML | CSS</h3>
+                <h4>
+                    Have a lot of work experience in HTML and CSS. With<br> the working experience in Front-end Development, I worked on various projects using HTML & CSS.<br>Skills: creating responsive style sheets.
+                </h4>
+                <hr />
+                <h3>->MIDDLE LAYER</h3>
+                <h4>
+                    Node JavaScript (JS), Express JavaScript<br>
+                    API Testing.
+                </h4>
+                <hr />
+                <h3>->DATABASE</h3>
+                <h4>
+                    SQL, PLSQL, Developer, Automation,<br>
+                    Database Tester, Posts JavaScript (JS)<br>
+                    Selenium Cypress.
+                </h4>
+                <hr />
+                <h3>TOOLS USED FOR DEVELOPMENT</h3>
+                <h4>
+                    JIRA, GitHub,<br>
+                    Postman, Figma.
+                </h4>
+                <hr />
+                <h3>INTEGRATED DEVELOPMENT ENVIRONMENT (IDE)</h3>
+                <h4>
+                    Visual Studio Code (VS Code),<br>
+                    X-Code, Android Studio.
+                </h4>
+                <hr />
+                <u>
+                    <h2>LANGUAGES KNOWN</h2>
+                </u>
+                <h4>
+                    <ul>
+                        <li>C++, Java</li>
+                        <li>Python</li>
+                        <li>JavaScript (JS), Swift</li>
+                    </ul>
+                </h4>
+                <hr />
+                <u>
+                    <h2>ABOUT ME</h2>
+                </u>
+                <h4>
+                    My name is Divya R Bondre. I am a full stack developer, specializing in Mobile Development &<br> iOS Development, with a strong interest in front-end web Development. I have created various projects using HTML<br> and CSS. <a href="https://github.com/DivyaFullStackDeveloper/Divya_html_Projects.git">Click here to visit my HTML and CSS Projects.</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to animate the range inputs to their initial values
+        function animateRangeInputs() {
+            const ranges = document.querySelectorAll('input[type="range"]');
+            ranges.forEach(range => {
+                const targetValue = range.value;
+                let currentValue = 0;
+
+                const interval = setInterval(() => {
+                    if (currentValue < targetValue) {
+                        currentValue++;
+                        range.value = currentValue;
+                    } else {
+                        clearInterval(interval);
+                    }
+                }, 20); // Adjust speed of animation
+            });
+        }
+
+        // Run the animation on page load
+        window.onload = animateRangeInputs;
+    </script>
+</body>
+
+</html>
