@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container {
+       background-color:white; 
+       height: 100vh;
+       width: 100vw;
+       display: flex;
+       justify-content: center;
+   }
+   .container {
+       height:60vh;
+       width:30vw;
+       border: solid;
+       background-color:gray;
+       text-align: center;
+       padding: 5%;
+       margin-top: 50px;
+   }
+   button{
+     background-color:rgb(70, 173, 238);
+     padding: 10px;
+     border-radius:10px;
+     width: 30%;
+     height: 10%;
+     
+   }
+   input{
+     width: 90%;
+     height: 10%;
+     padding: 10px;
+     border-radius: 10px;
+     font-size: 20px;
+   }
+   #demo{
+     width: 90%;
+     height: 10%;
+     padding: 20px;
+     border-radius: 10px;
+     font-size: 20px;
+     background-color: aliceblue;
+   }
+     </style>
+ </head>
+ <body>
+     <!-- main-container -->
+     <div class="main-container">
+         <div class="container">
+            <div id="demo">result</div> 
+            <br> 
+         <!-- first input -->
+         <label for="number"></label>
+         <input type="number" id="first-number" placeholder="Enter first number">
+         <br/>
+         <br />
+         <!-- second input -->
+         <label for="number"></label>
+         <input type="number" id="second-number" placeholder="Enter second number">
+         <br />
+         <br />
+         <!-- button -->
+         <button type="button"onclick="comparision1()">x > y</button>
+         <button type="button" onclick="comparision2()">x < y</button>
+         <button type="button" onclick="comparision3()">x >= y</button>
+         <br/>
+         <br/>
+         <button type="button" onclick="comparision4()">x <= y</button>
+         <button type="button" onclick="comparision5()">x != y</button>
+         <button type="button" onclick="comparision6()">x == y</button>
+         <br/>
+         <br/>
+         <button type="button" onclick="comparision7()">x === y</button>
+         <button type="button" onclick="comparision8()">x !== y</button>
+        </div>
+     </div>
+     <script>
+        // function comparison(){
+        //     a=10;
+        //     b=20;
+        //     if(a>b){
+        //         alert("a is grater")
+        //         else{
+        //             alert("b is grater")
+        //         }
+        //     }
+        // } 
+        //----------------------------------------
+        function comparision1(){
+       let x=document.getElementById("first-number").value;
+       let y=document.getElementById("second-number").value;
+       let z= x < y;
+    //    alert(z);
+       document.getElementById("demo").innerHTML=z; 
+    }
+    function comparision2(){
+       let x=document.getElementById("first-number").value;
+       let y=document.getElementById("second-number").value;
+       let z= x > y;
+    //    alert(z);
+       document.getElementById("demo").innerHTML=z; 
+    }
+    function comparision3(){
+       let x=document.getElementById("first-number").value;
+       let y=document.getElementById("second-number").value;
+       let z= x >= y;
+    //    alert(z);
+       document.getElementById("demo").innerHTML=z; 
+    }
+    function comparision4(){
+       let x=document.getElementById("first-number").value;
+       let y=document.getElementById("second-number").value;
+       let z= x <= y;
+    //    alert(z);
+       document.getElementById("demo").innerHTML=z; 
+    }
+    function comparision5(){
+       let x=document.getElementById("first-number").value;
+       let y=document.getElementById("second-number").value;
+       let z= x != y;
+    //    alert(z);
+       document.getElementById("demo").innerHTML=z; 
+    }
+    function comparision6(){
+       let x=document.getElementById("first-number").value;
+       let y=document.getElementById("second-number").value;
+       let z= x == y;
+    //    alert(z);
+       document.getElementById("demo").innerHTML=z; 
+    }
+    function comparision7(){
+       let x=document.getElementById("first-number").value;
+       let y=document.getElementById("second-number").value;
+       let z= x === y;
+    //    alert(z);
+       document.getElementById("demo").innerHTML=z; 
+    }
+    function comparision8(){
+       let x=document.getElementById("first-number").value;
+       let y=document.getElementById("second-number").value;
+       let z= x !== y;
+    //    alert(z);
+       document.getElementById("demo").innerHTML=z; 
+    }
+     </script>
+</body>
+</html>

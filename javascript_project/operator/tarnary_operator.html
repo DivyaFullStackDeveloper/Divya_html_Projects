@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .main-container{
+            height: 100vh;
+            width: 100vw;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            width: 30vw;
+            height:40vh;
+            border:solid;
+            background-color: skyblue;
+            text-align: center;
+            margin:30px;
+            padding: 10%;
+            justify-content: center;
+        }
+        button{
+            width:80%;
+            height:20%;
+            text-align: center;
+            margin:30px;
+        }
+        input{
+            width:80%;
+            height: 20%;
+        }
+        #display_box{
+        width: 90%;  
+        height: 40%;
+        padding:8px;
+        border-radius: 10px;
+        font-size: 20px;
+        border: solid;
+        background-color: white;
+        }
+    </style>
+    <script>
+        // function evanOdd() {
+        //     // input
+        //     const x = document.getElementById("first-number").value;
+           
+        //     // processing
+        //     let  y = x % 2 == 0 ? "EVAN" : "ODD";
+
+        //     // output
+        //     document.getElementById("display_box").innerHTML=y;
+        // }
+
+// ---------------------------------------------
+
+        // function age(){
+        //  // input
+        //  const x = document.getElementById("first-number").value;
+        //  // process
+        //  let y = x >= 18 ? "eligible" : "not-eligible";
+        //  //  output
+        // document.getElementById("display_box").innerHTML = y;
+        // }
+//  ----------------------------
+
+// function number(){
+//     // input
+//     const x = document.getElementById("first-number").value;
+//     const y = document.getElementById("second-number").value;
+//     // process
+    
+//     let z = x>y ? x<y ?  "X is Greater than Y" : "X is Less than Y" : "X Equals To Y" ;
+            
+//     // output
+//     document.getElementById("display_box").innerHTML = z;
+// }
+
+// ---------------------------------------
+
+ function time(){
+    // input
+    const x = parseFloat(document.getElementById("first-number").value); 
+    // process
+    let y = x >= 0 && x <= 11.59 ? "Good Morning" :
+            x >= 12.00 && x < 20.15 ? "Good Afternoon" :
+            x >= 20.15 && x < 24.00 ? "Good Evening" :
+            x >= 24.00 && x <= 24.00 ? "Good Night" :
+            "Invalid Time"
+    // output
+   document.getElementById("display_box").innerHTML = y;
+ }
+    </script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+        <!-- result-->
+        <div id="display_box" placeholder="result"></div>
+        <br/>
+        <br/>
+        <!-- second input -->
+        <label for="number"></label>
+        <input type="number" id="first-number" placeholder="Enter time">
+        <br/>
+        <br/>
+        <button class="number" onclick="time()">result</button>
+        </div>
+    </div>
+</body>
+</html>

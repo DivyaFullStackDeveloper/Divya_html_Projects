@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let num = "";
+    function numbertype(screen) {
+        num += screen 
+        document.getElementById("result").innerHTML = num;
+    }
+    function operator(action){
+        num +="" + action + "";
+        document.getElementById("screen").innerHTML = num;
+    }
+    function calculate(){
+        const result = eval(num);
+        document.getElementById("screen").innerHTML= result;
+    }
+    
+    function clearfunc() {
+        document.getElementById('result').innerHTML = "";
+    }
+    function deletfuc(){
+        document.getElementById('result').innerHTML = "";
+    }
+</script>
+<style>
+/* internal styling */
+    table {
+        background-color: gray;
+        height: 70vh;
+        width: 20vw;
+        border-style: solid;
+        border-color: black;
+        margin-left: 500px;
+        margin-top: 30px; 
+        text-align: center;
+    }
+/* table hader styling */
+    th {
+        border-style: solid;
+    }
+
+/* table data styling */
+    td {
+        /* height: 5px; */
+        border-style: solid;
+        background-color: dimgray;
+    }
+/* first row styling */
+    #result {
+        height:8vh;
+        width:100%;
+        padding:9px; 
+        text-align: start;
+        justify-content: flex-start;
+    }
+/* second row styling */
+    .two {
+        background-color: gray;
+        height: 5vh;
+    }
+/* third row styling */
+    .three {
+        height: 5vh;
+    }
+/* fort row styling */
+    .four {
+        height: 5vh;
+    }
+/* fifth row styling */
+    .five {
+        height: 5vh;
+    }
+/* sixth row styling */
+    .six {
+        height: 5vh;
+    }
+/* button styling */
+    button{
+    width: 100%;
+    height: 100%;
+    }
+</style>
+<body>
+    <table>
+        <!-- class="first-row" -->
+        <!-- first row input -->
+        <tr class="first-row">
+            <th id="result" colspan="4"></th>
+        </tr>
+        <!-- second row input -->
+        <tr class="two">
+            <td><button style="background-color:lightsteelblue;" onclick="clearfunc()">AC</button></td>
+            <td><button onclick="deletfuc()">Del</button></td>
+            <td><button onclick="numbertype('%')">%</button></td>
+            <td ><button style="background-color: orange;" onclick="numbertype('/')">/</button></td>
+        </tr>
+        <!-- third row input -->
+        <tr class="three">
+            <td><button onclick="numbertype(1)">1</button></td>  
+            <td><button onclick="numbertype(2)">2</button></td>
+            <td><button onclick="numbertype(3)">3</button></td>
+            <td><button style="background-color: orange;" onclick="numbertype('*')">*</button></td>
+        </tr>
+        <!-- forth row input -->
+        <tr class="four">
+            <td><button onclick="numbertype(4)">4</button></td>
+            <td><button onclick="numbertype(5)">5</button></td>
+            <td><button onclick="numbertype(6)">6</button></td>
+            <td ><button style="background-color:orange;" onclick="numbertype('-')">-</button></td>
+        </tr>
+        <!-- fifth row input -->
+        <tr class="five">
+            <td><button onclick="numbertype(7)">7</button></td>
+            <td><button onclick="numbertype(8)">8</button></td>
+            <td><button onclick="numbertype(9)">9</button></td>
+            <td><button style="background-color: orange;" onclick="numbertype('+')">+</button></td>
+        </tr>
+        <!-- sixth row input -->
+        <tr class="six">
+            <td colspan="2"><button onclick="numbertype(0)">0</button></td>
+            <td><button onclick="numbertype()">.</button></td>
+            <td><button style="background-color: orange;" onclick="equalstoo('=')">=</button></td>
+        </tr>
+    </table>
+</body>
+
+</html>
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        /* main-container */
+        .login-container{
+            height: 80%;
+            width: 70%;
+            display: flex;
+            justify-content: center;
+        } 
+       /*container */
+        .container {
+        height:40vh;
+        width:15vw;
+        border: solid;
+        background-color:lightblue;
+        text-align: center;
+        justify-content: center;
+        padding:7%;
+        margin-top: 50px;
+       } 
+    .input-group{
+        margin-bottom: 15px;
+    }
+     .btn{
+        background-color: dodgerblue;
+        height: 5vh;
+        width: 100%;
+        border-radius: 10px;
+        font-size: 16px;
+    } 
+    #display{
+        background-color:lightcyan;
+        height:50px;
+        width: 90%;
+        text-align: center;
+    }
+    </style>
+
+    <script>
+        function clickFunc(){
+          let x = document.getElementById('input-one').value;
+          let y = document.getElementById('input-one').value;
+          z = Number(x) * Number(y);
+          document.getElementById("display").innerHTML = z;
+        }
+// clear function 
+        function clearFunction() {
+            document.getElementById("display").innerHTML="";
+        }
+    </script>
+</head>
+<body>
+    <!-- main container -->
+    <div class="login-container">
+        <div class="container">
+        <p id="display">Result<p>
+
+          <div class="input-group">
+            <input type="text" id="input-one" placeholder="first input" >
+          </div>  
+          <div class="input-group">
+            <input type="text" id="input-two" placeholder="second input">
+          </div>   
+
+            <button class="btn" onclick="clickFunc()">button</butto>
+                <br/>
+                <br />
+            <button class="btn" onclick="clearFunction()">AC</button>
+        </div>
+    </div>
+</body>
+</html>

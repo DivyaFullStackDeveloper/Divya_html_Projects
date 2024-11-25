@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- internal style -->
+    <style>
+        .main-container{
+            width: 50vw;
+            height: 50vh;
+            background-color: #BCF2F6;
+            border-style: double;
+            border-width: 6px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        /* first-division styling */
+        .first-division{
+            width:100%;
+            height: 30%;
+            background-color: #BCF2F6;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #display{
+            width: 90%;
+            height: 90%;
+            background-color:#fff;
+            border-style: solid;
+            text-align: center;
+            color: black
+        }
+        /* second-division styling 
+         */
+        .second-division{
+            width: 100%;
+            height:70%;
+            display: flex;
+            flex-direction:row;
+            justify-content:space-around;
+            align-items: center;
+        }
+        button{
+            width: 20%;
+            height: 20%;
+            background-color:#B7B7B7;
+        }
+        .input{
+            width: 20%;
+            height: 20%;
+            background-color:#B7B7B7;
+        }
+    </style>
+    <script>
+        // function red(){
+        //     // const y= `Hello, ${name} ! How are you?`;
+        //     // const  z=  "hello" + name + "How are you?";
+        // //  document.getElementById("display").style.backgroundColor = "red";
+        
+        // }
+        // function green(){
+        //     // const z = x - y;
+        //      document.getElementById("display").style.backgroundColor = "green";
+        // } 
+        // --------------------------------------------------------------------
+            let x = 10;
+            let y = 20;
+
+        function Add(){
+               document.getElementById("display").innerHTML = x + y;
+        }
+        function Sub(){
+            
+            document.getElementById("display").innerHTML = y - x;
+        }
+        function Multi(){
+            
+            document.getElementById("display").innerHTML = x * y;
+        }
+        function Div(){
+            
+            document.getElementById("display").innerHTML = x / y;
+        }
+        function Modulo(){
+            
+            document.getElementById("display").innerHTML = "10 % 20 = " + y % x;
+        }
+        function Squre(){
+            z = y * y;
+            document.getElementById("display").innerHTML =  z ;
+        }
+        
+    </script>
+</head>
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <!-- first-container -->
+        <div class="first-division">
+            <!-- <input type="text" id="display"> -->
+             <textarea name="" id="display">Display</textarea>
+        </div>
+        <!-- second-container -->
+        <div class="second-division">
+            <div class="input">
+            <button type="button"  onclick="Add()">ADD</button>
+            <button type="button"  onclick="Sub()">SUB</button>
+        </div>
+        <div class="input">
+            <button type="button" onclick="Multi()">Multi</button>
+            <button type="button" onclick="Div()">Div</button>
+        </div>
+        <div class="input">
+        <button type="button" onclick="Modulo()">Modulo</button>
+        <button type="button" onclick="Squre()">Squre</button>
+        </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

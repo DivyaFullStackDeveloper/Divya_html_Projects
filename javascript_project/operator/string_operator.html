@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container {
+       background-color:white; 
+       height: 100vh;
+       width: 100vw;
+       display: flex;
+       justify-content: center;
+   }
+   .container {
+       height:60vh;
+       width:30vw;
+       border: solid;
+       background-color:darkslategray;
+       text-align: center;
+       padding: 5%;
+       margin-top: 50px;
+   }
+   button{
+     background-color:lightgreen;
+     padding: 10px;
+     border-radius:10px;
+     width: 30%;
+     height: 10%;
+     
+   }
+   input{
+     width: 90%;
+     height: 10%;
+     padding: 10px;
+     border-radius: 10px;
+     font-size: 20px;
+   }
+   #demo{
+     width: 90%;
+     height: 10%;
+     padding: 20px;
+     border-radius: 10px;
+     font-size: 20px;
+     background-color: aliceblue;
+   }
+     </style>
+ </head>
+ <body>
+     <!-- main-container -->
+     <div class="main-container">
+         <div class="container">
+            <div id="demo">result</div> 
+            <br> 
+         <!-- first input -->
+         <label for="text"></label>
+         <input type="text" id="first-number" placeholder="Enter first number">
+         <br/>
+         <br />
+         <!-- second input -->
+         <label for="text"></label>
+         <input type="text" id="second-number" placeholder="Enter second number">
+         <br />
+         <br />
+         <!-- button -->
+         <button type="button"onclick="string1()">"ABC" + "def" </button>
+         <button type="button" onclick="string2()">"10" + 10</button>
+         <button type="button" onclick="string3()">"ABC" == "abc"</button>
+        </div>
+     </div>
+     <script>
+       function string1(){
+        let a= document.getElementById("first-number").value;
+            b= document.getElementById("second-number").value;
+            let c= a + b
+            console.log(c);
+            alert(c);
+            document.getElementById("demo").innerHTML= c;
+       }
+       function string2(){
+        let a= document.getElementById("first-number").value;
+            b= document.getElementById("second-number").value;
+            let c= a + Number(b);
+            console.log(c);
+            alert(c);
+            document.getElementById("demo").innerHTML= c;
+       }
+       function string3(){
+        let a= document.getElementById("first-number").value;
+            b= document.getElementById("second-number").value;
+            let c= a == b
+            console.log(c);
+            alert(c);
+            document.getElementById("demo").innerHTML= c;
+       }
+     </script>
+</body>
+</html>

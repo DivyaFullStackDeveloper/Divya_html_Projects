@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+       .main-container{
+            height:50vh;
+            width: 20vw;
+            display: flex;
+            justify-content: center;
+            background-color:silver;
+            border-color: black;
+        }  
+        #display{
+            height: 15vh;
+            width: 40%;
+            background-color: gray;
+            padding:9px;
+        }
+</style>
+<script>
+    function numberType(screen){
+       document.getElementById('display').innerHTML
+    }
+</script>
+</head>
+<body>
+    <!-- main container -->
+    <div class="main-container">
+    <!-- second container -->
+        <div class="second-container">
+    <!-- display -->
+    <p id="display"></p>
+    <!-- buttons -->
+<div>
+    <button class="btn" onclick="numberType()">AC</button>
+    <button class="btn" onclick="numberType()">%</button>
+    <button class="btn" onclick="numberType()">Del</button>
+    <button class="btn" onclick="divFunction()">/</button>
+</div>
+<div>
+    <button class="btn" onclick="numberType(1)">1</button>
+    <button class="btn" onclick="numberType(2)">2</button>
+    <button class="btn" onclick="numberType(3)">3</button>
+    <button class="btn" onclick="multiFunction()">*</button>
+</div>
+<div>
+    <button class="btn" onclick="numberType(4)">4</button>
+    <button class="btn" onclick="numberType(5)">5</button>
+    <button class="btn" onclick="numberType(6)">6</button>
+    <button class="btn" onclick="subFunction()">-</button>
+</div>
+    <button class="btn" onclick="numberType(7)">7</button>
+    <button class="btn" onclick="numberType(8)">8</button>
+    <button class="btn" onclick="numberType(9)">9</button>
+    <button class="btn" onclick="addFunction()">+</button>
+<div>
+    <button class="btn" onclick="numberType(0)">0</button>
+    <button class="btn" onclick="numberType()">.</button>
+    <button class="btn" onclick="numberType()">=</button>
+</div>
+    </div>
+</div>
+</body>
+</html>
