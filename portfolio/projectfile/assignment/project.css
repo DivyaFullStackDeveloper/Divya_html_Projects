@@ -1,0 +1,130 @@
+/*  project css  */
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #072227,#001C30, #040D12, #001C30);
+
+}
+
+.Projects-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(to right, #072227,#001C30, #040D12, #001C30);
+
+}
+
+.project-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color:cadetblue;
+    margin-bottom: 40px;
+}
+
+.first-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+    margin-bottom: 20px;
+}
+.second-div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+    margin-bottom: 20px;
+}
+.project-card {
+    width: 300px;
+    height: 250px;
+    color: #EDDFE0;
+    font-size: 30px;
+    background:#35858B;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px #4FBDBA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px #35858B;
+}
+
+img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    /* transition: color 0.3s ease-in-out; */
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.code-btn{
+    height: 30px;
+    width: 15%;
+    border-radius:5px;
+    color:#35858B;
+    background-color:lightcyan;
+}
+.code-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    gap: 20px;
+}
+.option{
+    width: 100%;
+    display: fl;
+}
+.code{
+    background-color: lightgrey;
+    width: 80%;
+    height: auto;
+}
+.code-container{
+   height:auto;
+    
+}
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    /* transition: color 0.3s ease-in-out; */
+}
+.code-card{
+    width: 300px;
+    height: 250px;
+    color: rebeccapurple;
+    font-size: 30px;
+    background:#35858B;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px #4FBDBA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;            
+}

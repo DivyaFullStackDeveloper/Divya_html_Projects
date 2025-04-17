@@ -1,6 +1,6 @@
 /*  project css  */
 .Projects-container {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -12,7 +12,6 @@
     font-weight: bold;
     color:cadetblue;
     margin-bottom: 40px;
-    
 }
 
 .first-div {
@@ -63,3 +62,4 @@ img {
     font-weight: bold;
     /* transition: color 0.3s ease-in-out; */
 }
+ 
